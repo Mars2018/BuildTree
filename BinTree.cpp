@@ -34,7 +34,7 @@ void Tree::buildTree(const std::vector<int> &L){
     std::queue<Node*> parentQueue;
     std::queue<Node*> childQueue;
 
-    Node *root = new Node(L[0]);
+    root = new Node(L[0]);
 
     parentQueue.push(root);
 
@@ -84,7 +84,7 @@ void Tree::printTree(){
             std::cout << std::endl;
             temp1 = temp2;
             std::queue<Node*> empty;
-            std::swap(temp1, temp2);
+            std::swap(temp2, empty);
         }
     }
 
